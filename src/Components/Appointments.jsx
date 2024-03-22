@@ -23,7 +23,7 @@ const Appointments = () => {
   const getAllAppointments = async () => {
     try {
       const data = await axios.get(
-        "http://localhost:4000/api/appointment/65fd1e9dc5a3c0cbb69d0a6a",
+        "https://twinsis.onrender.com/api/appointment/65fd1e9dc5a3c0cbb69d0a6a",
         {
           headers: {
             "Content-Type": "application/json",
