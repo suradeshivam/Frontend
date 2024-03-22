@@ -18,10 +18,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --host 0.0.0.0 --public itsnicholai.fyi",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --host 0.0.0.0 --public itsnicholai.fyi",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "eslintConfig": {
     "extends": [
